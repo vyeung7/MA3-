@@ -1,0 +1,41 @@
+@mixin textformat{
+    font-family: $font;
+    color: $textcolor;
+    font-size: $bodyfontsize;
+}
+
+@mixin grid{
+    @media screen and (max-width: $screen){
+        .grid-container{
+            display: grid;	
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            padding: 3em;
+            background-color: $bgcolor3;
+        }
+        
+        .grid-item{
+        background-color: $bgcolor2;
+        border: 1px solid rgba(0,0,0,0.8);
+        padding: 2em;
+        font-size: 30px;
+        color: white;
+        }
+        
+         .item1{
+        justify-items: middle; 
+        word-wrap: break-word;
+        }
+        
+        .item2{
+        justify-items: middle;
+        word-wrap: break-word;
+        }
+        
+        
+        
+        .item3{
+        justify-items:middle;
+        word-wrap: break-word;
+        }
+    }
+}

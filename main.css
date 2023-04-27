@@ -12,10 +12,10 @@ Body{
   }
   
   ul{
-      list-style-type:none;
-      margin:0;
-      padding:0;
-      background-color: darkseagreen;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color: darkseagreen;
     text-align: center;
   }
   
@@ -26,36 +26,31 @@ Body{
   }
   li{
     display: inline-block;
-      float: center;
   }
   
   li a{
-      float: left;
-      text-align: center;
-      padding: 20px 45px;
-      text-decoration: none;
-      font-family: serif;
-      font-size: 20px;
+    float: left;
+    text-align: center;
+    padding: 20px 45px;
+    text-decoration: none;
+    font-family: serif;
+    font-size: 20px;
     text-transform: uppercase;
-      color: white;
+    color: white;
     font-weight:bold;
     width: 100px;
     display: block;
   }
   li a:hover{
       color:darkseagreen;
-      background-color:white;
+      background-color: white;
   }
   h1{
     font-size: 40px;
   }
   section1{
     height: 60vh;
-  
   }
-  
-  
-  
   
   text{
     text-align: center;
@@ -85,23 +80,30 @@ Body{
     object-fit: cover;
   }
   
-  divider{
+  .divider{
     width: 300px;
     height: 5px;
     background-color: khaki;
     display: inline-block;
     border-radius: 50%
   }
-  h2{
+  h1{
     background-color: #AB6B51;
     color: white;
     text-align: center;
   }
   
-  h3{
+  h2{
     background-color: #B1C7CB;
     color: white;
     text-align: center;
   }
   
+  h4{
+    background-color: #6C614A;
+    color: white;
+    text-align: center;
+  }
+
+
   
