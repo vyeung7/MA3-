@@ -9,6 +9,8 @@ Body{
     font-family: sans-serif;
     background-color: linen;
     color: #A47551;
+    margin: 5px;
+    padding: 10px; 
   }
 /*nav bar*/
   ul{
@@ -48,25 +50,7 @@ Body{
 
 
 /*Inspo image gallery */
-  .image-grid{
-    --gap: 16px;
-    --num-cols: 3;
-    --row-height: 300px;
-  
-    box-sizing: border-box;
-    padding: var(--gap);
-  
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-  }
-  
-  .image-grid > img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-  }
+
   
   
 /*border inspo text*/
@@ -127,40 +111,73 @@ word-wrap: break-word;
     text-align: center;
   }
 
-  /*slider responsive image gallery*/
-  img{
-    max-width: 100%;
-  }
-
-.image-grid{
-    margin: auto;
-    padding: auto;
-    
+  /*responsive image gallery*/
+img{
+  max-width: 100%;
 }
 
-.photo-gallery{
-    display: flex;
-    gap: 20px;
+.image-grid{
+  display: flex;
+  flex-wrap: wrap;
+  padding:  50px;  
+  align-items: center;
 }
 
 .column{ 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex:33%;
+  max-width: 100%;
+  padding: 10px;
 }
 
-.photo img{
-    width:500%;
-    height: 100%;
-    border-radius: 5px;
-    
+.column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
 }
-@media (max-width: 3000px){
-    .photo-gallery{
-        flex-direction: column;
-       
-    }
 
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*background image*/
+.bg-image{
+  position:relative;
+}
+
+.ucf{
+ filter: blur(5px);
+}
+
+.textbox{
+
+  overflow-wrap: break-word;
+  position: absolute ;
+  right: 50px;
+  background-color:white;
+  color:#A47551;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid goldenrod;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
 
   
